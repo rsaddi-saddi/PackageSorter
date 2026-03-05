@@ -11,11 +11,11 @@ class Program
         Console.WriteLine(PackageSorter.Sort(200,200,200,25));  // REJECTED
 
         // Edge cases
-        Console.WriteLine(PackageSorter.Sort(100,100,100,10));   // SPECIAL (volume = 1,000,000)
-        Console.WriteLine(PackageSorter.Sort(150,10,10,5));      // SPECIAL (dimension = 150)
+        Console.WriteLine(PackageSorter.Sort(100,100,100,10));   // SPECIAL
+        Console.WriteLine(PackageSorter.Sort(150,10,10,5));      // SPECIAL
         Console.WriteLine(PackageSorter.Sort(10,150,10,5));      // SPECIAL
         Console.WriteLine(PackageSorter.Sort(10,10,150,5));      // SPECIAL
-        Console.WriteLine(PackageSorter.Sort(10,10,10,20));      // SPECIAL (mass = 20)
+        Console.WriteLine(PackageSorter.Sort(10,10,10,20));      // SPECIAL
 
         // Bulky due to volume
         Console.WriteLine(PackageSorter.Sort(100,100,101,5));    // SPECIAL
